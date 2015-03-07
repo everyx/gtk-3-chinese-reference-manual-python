@@ -1,3 +1,3 @@
 # 目录
 
-* [First Chapter](chapter1.md)
+* [GTK+ 概览](chapter1.md)
