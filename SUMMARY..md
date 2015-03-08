@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [GTK+ 概览](gtk.md)
-   * 开始使用 GTK+
+   * [开始使用 GTK+](chapter1/gtk-getting-started.md)
        * 基础
        * 填充
        * 绘制
