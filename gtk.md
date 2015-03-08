@@ -8,3 +8,4 @@ GTK+依赖于以下库：
 * GObject：是一个提供了类型系统、包括一个元类型的基础类型集合、信号系统的库。
 * GIO：是一个包括文件、设备、声音、输入输出流、网络编程和DBus通信的现代的易于使用的VFS 应用程序编程接口。
 * cairo：Cairo 是一个支持复杂设备输出的2D图形库。
+* Pango：Pango 是一个国际化正文布局库。它围绕一个表现正文段落的PangoLayout object。Pango提供GtkTextView、GtkLabel、GtkEntry和其他表现正文的引擎。
