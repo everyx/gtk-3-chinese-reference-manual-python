@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [GTK+ 概览](gtk.md)
+* [GTK+ 概览](chapter1/gtk.md)
    * [开始使用 GTK+](chapter1/gtk-getting-started.md)
        * 基础
        * 填充
