@@ -3,8 +3,8 @@
 * [Introduction](README.md)
 * GTK+ 概览
    * 邮件列表和 bug 报告
-   * GTK+ 绘图模型
    * 常见问题
+   * GTK+ 绘图模型
    * 开始使用 GTK+
        * 基础
        * 填充
