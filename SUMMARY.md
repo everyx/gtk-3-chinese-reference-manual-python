@@ -4,7 +4,7 @@
 * [GTK+ 概览](chapter1/gtk.md)
    * [开始使用 GTK+](chapter1/gtk-getting-started.md)
        * [基础](chapter1/basics.md)
-       * [填充](chapter1/packing.md)
+       * [组装](chapter1/packing.md)
        * 绘制
        * 构建用户界面
        * 构建应用程序
