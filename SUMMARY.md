@@ -6,7 +6,7 @@
        * [基础](chapter1/basics.md)
        * [组装](chapter1/packing.md)
        * [绘制](chapter1/drawing.md)
-       * 构建用户界面
+       * [构建用户界面](chapter1/building-user-interfaces.md)
        * 构建应用程序
            * 一个小应用
            * 填充窗口
