@@ -6,6 +6,9 @@
     "pluginsConfig": {
         "ga": {
             "token": "UA-53092201-4"
+        },
+        "disqus": {
+            "shortName": "gtk-3-chinese-reference-manual-python"
         }
     }
 }
