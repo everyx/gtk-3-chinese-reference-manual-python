@@ -1,10 +1,7 @@
 {
     "plugins": [
-        "ga"
+        "ga",
+        "disqus"
     ],
-    "pluginsConfig": {
-        "ga": {
-            "token": "UA-53092201-4"
-        }
-    }
+    "pluginsConfig": {}
 }
