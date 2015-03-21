@@ -8,26 +8,27 @@
 import sys
 from gi.repository import Gtk, Gio
     
-app = MyApplication()
-exit_status = app.run(sys.argv)
-sys.exit(exit_status)
+if __name__ == "__main__":
+    app = ExampleApp()
+    exit_status = app.run(sys.argv)
+    sys.exit(exit_status)
 ```
 
-所有的程序逻辑都在Gtk.Application 的子类 MyApplication 类中。我们的例子暂时还没有什么好玩的功能，所做的仅仅是在无餐激活时打开一个窗口，而在有参数时打开这个给定的文件。
+所有的程序逻辑都在 Gtk.Application 的子类 MyApplication 类中。我们的例子暂时还没有什么好玩的功能，所做的仅仅是在无餐激活时打开一个窗口，而在有参数时打开这个给定的文件。
 
 要处理这两种情况，我们重载了 `do_activate()` 虚函数，也就是那个在没有命令行参数的情况下程序启动时调用的方法，`do_open()` 虚函数则是在程序以命令行参数方式启动时调用的。
 
 要学习更多的 GApplication 知识，清查阅 GIO 文档。
 
 ```python
-class MyApplication(Gtk.Application):
+class ExampleApp(Gtk.Application):
    def __init__(self):
       Gtk.Application.__init__(self,
                                application_id='org.gtk.exampleapp',
                                flags=Gio.ApplicationFlags.HANDLES_OPEN);
 
    def do_activate(self):
-      win = MyWindow(self)
+      win = ExampleAppWindow(self)
       win.present()
 
    def do_open(self, files, hint):
@@ -36,7 +37,7 @@ class MyApplication(Gtk.Application):
       if win is not None:
          win = windows.data()
       else:
-         win = MyWindow(self)
+         win = ExampleAppWindow(self)
          
       for file in files:
         example_app_window_open(win, file)
@@ -47,7 +48,7 @@ class MyApplication(Gtk.Application):
 另外一个作为 GTK+ 应用支持的重要的类是 GtkApplicationWindow。通常都是用他的子类。我们的窗口啥都没干，所以窗口空空如也。
 
 ```python
-class MyWindow(Gtk.ApplicationWindow):
+class ExampleAppWindow(Gtk.ApplicationWindow):
    def __init__(self, app):
       Gtk.Window.__init__(self, application=app)
 ```

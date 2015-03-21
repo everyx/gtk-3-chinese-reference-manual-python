@@ -1,11 +1,14 @@
 #!/usr/bin/env python
 
 import sys
+import os
 from gi.repository import Gtk, Gio
 
 class ExampleAppWindow(Gtk.ApplicationWindow):
    def __init__(self, app):
       Gtk.Window.__init__(self, application=app)
+      self.set_template_from_resource('/org/gtk/exampleapp/window.ui')
+      self.init_template()
 
 class ExampleApp(Gtk.Application):
    def __init__(self):
@@ -32,8 +35,11 @@ class ExampleApp(Gtk.Application):
 
 def example_app_window_open(win, file):
     pass
-
+    
 if __name__ == "__main__":
+    resource = Gio.resource_load("exampleapp.gresource")
+    Gio.Resource._register(resource)
+
     app = ExampleApp()
     exit_status = app.run(sys.argv)
     sys.exit(exit_status)
