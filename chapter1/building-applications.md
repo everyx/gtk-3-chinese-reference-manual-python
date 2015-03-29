@@ -11,13 +11,3 @@
 GTK+ 包含建立在 [GApplication](https://developer.gnome.org/gio/unstable/GApplication.html) 上的应用支持。在这篇教程中，我们从无到有构建一个简单的应用，并逐渐一点点的增加功能。在这个过程中，我们将学习 GApplication，template, resources, application menu，setting，GtkHeaderBar，GtkStack，GtkSearchBar，GtkListBox 及更多知识。
 
 完整的源文件可以在项目 github 仓库中的 code 目录下找到。
-
-1. 一个小应用
-2. 填充窗口
-3. 打开文件
-4. 一个应用菜单
-5. 一个偏好对话框
-6. 增加搜索栏
-7. 增加侧边栏
-8. 属性
-9. 标题栏

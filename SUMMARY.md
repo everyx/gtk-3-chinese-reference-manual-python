@@ -10,7 +10,7 @@
        * [构建应用程序](chapter1/building-applications.md)
            * [一个小应用](chapter1/a-trivial-application.md)
            * [填充窗口](chapter1/populating-the-window.md)
-           * 打开文件
+           * [打开文件](chapter1/opening-files.md)
            * 一个应用菜单
            * 一个偏好对话框
            * 增加搜索条
